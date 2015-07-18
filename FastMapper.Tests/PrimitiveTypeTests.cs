@@ -20,6 +20,7 @@ namespace FastMapper.Tests
             public double? Debit { get; set; }
             public string City { get; set; }
             public string Country { get; set; }
+            public TimeSpan StartTime { get; set; }
         }
 
         public class CustomerDTO
@@ -30,6 +31,7 @@ namespace FastMapper.Tests
             public bool IsActive { get; set; }
             public char DriverLicenceType { get; set; }
             public double? Debit { get; set; }
+            public TimeSpan StartTime { get; set; }
         }
 
         public Customer GetCustomer()
@@ -43,7 +45,8 @@ namespace FastMapper.Tests
                 Id = 1,
                 Debit = 100,
                 IsActive = true,
-                Name = "Timuçin"
+                Name = "Timuçin",
+                StartTime = new TimeSpan(0, 12, 34, 56, 0)
             };
         }
 

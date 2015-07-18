@@ -76,6 +76,7 @@ namespace FastMapper.Utils
                 || type == typeof(ulong)
                 || type == typeof(short)
                 || type == typeof(DateTime)
+                || type == typeof(TimeSpan)
                 || ReflectionUtils.IsNullable(type) && IsPrimitive(Nullable.GetUnderlyingType(type))
                 || type.IsEnum;
         }
